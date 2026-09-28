@@ -2181,7 +2181,7 @@ else()
 	add_darling_object_library(low_level_interpreter_i386 darling/source/empty.c)
 endif()
 
-if (TARGET_arm64)
+if (TARGET_ARM64)
 	set(LOW_LEVEL_INTERPRETER_ARM64_HEADERS "DerivedSources/JavaScriptCore/LLIntOffsets/ARM64/debug")
 
 	add_darling_object_library(low_level_interpreter_arm64 64BIT_ONLY llint/LowLevelInterpreter.cpp)
