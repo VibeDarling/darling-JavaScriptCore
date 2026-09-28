@@ -1,0 +1,5 @@
+file(READ "${INPUT}" actual)
+string(STRIP "${actual}" actual)
+if(NOT actual STREQUAL EXPECTED)
+    message(FATAL_ERROR "Expected ${EXPECTED}, got ${actual}")
+endif()
