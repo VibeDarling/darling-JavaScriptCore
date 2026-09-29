@@ -34,6 +34,7 @@ add_compile_definitions(
 	ENABLE_DATALIST_ELEMENT
 	ENABLE_ENCRYPTED_MEDIA
 	ENABLE_FILTERS_LEVEL_2
+	ENABLE_FTL_JIT
 	ENABLE_FULLSCREEN_API
 	ENABLE_GAMEPAD
 	ENABLE_GEOLOCATION
@@ -104,8 +105,6 @@ add_compile_definitions(
 
 	PRIVATE # For kdebug
 )
-
-add_compile_definitions(ENABLE_FTL_JIT)
 
 set(JSC_PUBLIC_HEADERS
 	API/JavaScript.h
